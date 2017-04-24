@@ -144,7 +144,7 @@ export class Track extends React.Component {
   render() {
     var slides = renderSlides.call(this, this.props);
     return (
-      <div className='slick-track' style={this.props.trackStyle}>
+      <div className='slick-track' data-role='slick-track' style={this.props.trackStyle}>
         { slides }
       </div>
     );

@@ -91,7 +91,7 @@ export default class Slider extends React.Component {
     if (settings === 'unslick') {
       // if 'unslick' responsive breakpoint setting used, just return the <Slider> tag nested HTML
       return (
-        <div>{children}</div>
+        <div data-role='unslick-slider'>{children}</div>
       );
     } else {
       return (

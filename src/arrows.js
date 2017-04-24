@@ -20,7 +20,7 @@ export class PrevArrow extends React.Component {
 
     var prevArrowProps = {
       key: '0',
-      'data-role': 'none',
+      'data-role': 'slick-arrow-prev',
       className: classnames(prevClasses),
       style: {display: 'block'},
       onClick: prevHandler
@@ -58,7 +58,7 @@ export class NextArrow extends React.Component {
 
     var nextArrowProps = {
       key: '1',
-      'data-role': 'none',
+      'data-role': 'slick-arrow-next',
       className: classnames(nextClasses),
       style: {display: 'block'},
       onClick: nextHandler
