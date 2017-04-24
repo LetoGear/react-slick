@@ -94,9 +94,11 @@ var helpers = {
     });
   },
   getWidth: function getWidth(elem) {
+    if (!elem || !elem.getBoundingClientRect) return 0;
     return elem.getBoundingClientRect().width || elem.offsetWidth || 0;
   },
   getHeight(elem) {
+    if (!elem || !elem.getBoundingClientRect) return 0;
     return elem.getBoundingClientRect().height || elem.offsetHeight || 0;
   },
   adaptHeight: function () {
